@@ -19,12 +19,12 @@ jobs:
         ports:
           - "5432:5432"
         env:
-          POSTGRES_DB: rails_test
-          POSTGRES_USER: rails
-          POSTGRES_PASSWORD: password
+          POSTGRES_DB: booking1663680915056yinpmythemxnsspp
+          POSTGRES_USER: vfxegybnmuhpezaiaqcucwis@psql-mock-database-cloud
+          POSTGRES_PASSWORD: rdfddfnatibaovykcagtzsmg
     env:
       RAILS_ENV: test
-      DATABASE_URL: "postgres://rails:password@localhost:5432/rails_test"
+      DATABASE_URL: "psql-mock-database-cloud.postgres.database.azure.com:5432"
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
